@@ -1,0 +1,133 @@
+body {
+    font-family: var(--font-dm-sans);
+}
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.marquee-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    animation: marqueeAnim linear infinite;
+}
+
+.marquee-track img {
+    height: auto;
+    width: 300px;
+    margin: 0;
+    display: inline-block;
+}
+
+@keyframes marqueeAnim {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+#navbar {
+    display: flex;
+    background-image:  url(src/imagem-sei-la.jpg); /* ou a cor que quiser */
+    position: sticky;
+    top: 0; 
+    transition: top 0.3s;
+    z-index: 1000;
+    padding-right: 10%;
+}
+
+#navbar a{
+    font-size: 24px;
+    color: white;
+    border: none;
+    transition: 0.5s ease;
+
+}
+
+#navbar a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.navbar-brand:hover {
+    color:brown;
+}
+
+
+#inicio {
+    min-height: 1280px;
+    background-image: url("src/tiringa.jpg");
+    color: black;
+    font-size: 500px;
+}
+
+#carrossel {
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
+}
+
+#paisagem {
+    min-height: 1165px;
+    background-image: url("src/imagem-sei-la.jpg");
+    background-size: contain;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 30px 0 0 30px;
+}
+
+.agenda h1 {
+    font-size: 80px;
+}
+
+.agenda h2 {
+    font-size: 30px;
+    padding: 0 0 0 30px;
+}
+
+#videos {
+    background-image: url(src/imagem-sei-la.jpg); /* cor de fundo para a seção de vídeos */
+    color: white;
+    padding: 0px 0 40px 0;
+}
+
+#videos a {
+    position: relative;
+    font-size: 18px;
+    top: 20px;
+}
+
+#fotos {
+    background-image: url(src/imagem-sei-la.jpg); /* cor de fundo para a seção de fotos */
+    color: white;
+    padding: 0px 0 40px 0;
+} 
+
+#fotos div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0 20px 0;
+}
+
+#fotos img {
+    max-width: 400px;
+    height: auto;
+}
+
+glitghtbox {
+    --glightbox-bg: rgba(0, 0, 0, 0.8);
+    --glightbox-color: white;
+    transition: all 0.3s ease;
+}
